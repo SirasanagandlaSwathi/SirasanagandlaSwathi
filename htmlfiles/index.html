@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  background-color: #03045e;
+  padding:5px;
+  margin-top:5px;
+  border:5px;
+}
+
+.flex-container > div {
+  background-color: #343f71;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  text-align:center;
+}
+.details{
+	border:5px;
+	background-color:#343f71;
+	font-family:voice-family;
+	color:#e9d8e4;
+	height:30px;
+	text-align:right;
+}
+.visible{
+	display:block;
+}
+.hidden{
+	display:none;
+
+}
+.container {
+    display: flex;
+}
+.container div {
+    width:16%;
+}
+.courses {
+
+}
+.regulation{
+    display:none;
+}
+.year{
+    display:none;
+}
+.subjects{
+    display:none;
+}
+.branch{
+	display:none;
+}
+.papers{
+   display:none;
+}
+a:link{
+	text-decoration: none;
+}
+</style>
+
+<title>MRECW</title>
+<link rel="icon" type="images/jpg" href="https://tse2.mm.bing.net/th?id=OIP.sX-sciQM7aMi6Z6j6livvgAAAA&pid=Api&P=0&h=180" />
+</head>
+
+<body>
+
+<div class="flex-container">
+  <div style="text-align:center;color:#e9d8e4"><img src="C:\Users\User\OneDrive\Desktop\MRECW-online services\pic\logo.jpg" width="50" height="60">
+  MallaReddy Engineering College For Women Autonomous<br>Online Services
+  </div>
+</div>
+<div class="details">
+<center>
+<table >
+<tr>
+	<div>
+	<th><td colspan="2"><a href="https://www.mallareddyecw.com/" class="details">Home</a></td></th>
+	<th><td colspan="2"><a href="https://www.mallareddyecw.com/Home/About" class="details">About us</a></td></th>
+	<th><td colspan="2"><a href="https://www.mallareddyecw.com/Home/Contact" class="details">Contact details</a></td><th>
+	<th><td colspan="2"><a href="https://www.mallareddyecw.com/Home/Events" class="details">notifications</a></td></th>
+	<th><td colspan="2"><a href="#" class="details">Syllabus</a></td></th>
+	</div>
+</tr>
+</table>
+</center>
+</div>
+
+    <div class="container">
+      <div class="courses">
+		<h4 style="color:#A9A9A9">choose the courses you want to search</h4>
+		<a href="#" onclick="toggleDiv('reg')">B.tech</a><br><br>
+		
+	  </div>
+      <div id="reg" class="hidden" >
+	    <h4 style="color:#c0c0c0;">Select the regulation</h4>
+		<a href="#" onclick="toggleDiv('bnc1')">R-15</a><br><br>
+		<a href="#" onclick="toggleDiv('bnc1')">R-16</a><br><br>
+		<a href="#" onclick="toggleDiv('bnc')">R-18</a><br><br>
+		<a href="#" onclick="toggleDiv('bnc')">R-22</a><br>
+	  </div>
+	  <div id="bnc" class="hidden">
+	   <h4 style="color:#c0c0c0;">Select the branch</h4>
+		<a href="#" onclick="toggleDiv('sem')">CSE-IOT</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">CSE-AIML</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">CSE-CS</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">CSE-DS</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">CSE-IT</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">CSE</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">ECE</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">EEE</a><br><br>
+	  </div>
+	  <div id="bnc1" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the branch</h4>
+	  <a href="#" onclick="toggleDiv('sem')">CSE-IT</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">CSE</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">ECE</a><br><br>
+		<a href="#" onclick="toggleDiv('sem')">EEE</a><br><br>
+	  </div>
+	  
+      <div id="sem" class="hidden">
+	    <h4 style="color:#c0c0c0;">Select the semester</h4>
+	    <a href="#" onclick="toggleDiv('sub1')">I-I</a><br><br>
+		<a href="#" onclick="toggleDiv('sub2')">I-II</a><br><br>
+		<a href="#" onclick="toggleDiv('sub3')">II-I</a><br><br>
+		<a href="#" onclick="toggleDiv('sub4')">II-II</a><br><br>
+		<a href="#" onclick="toggleDiv('sub5')">III-I</a><br><br>
+		<a href="#" onclick="toggleDiv('sub6')">III-II</a><br><br>
+		<a href="#" onclick="toggleDiv('sub7')">IV-I</a><br><br>
+		<a href="#" onclick="toggleDiv('sub8')">IV-II</a>
+	  </div>
+	  <div id="sub1" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the subject</h4>
+	    <a href="C:\Users\User\Downloads\m1.pdf" download onclick="toggleDiv('sem')">Mathematics-I</a><br><br>
+		<a href="C:\Users\User\Downloads\pps.pdf" download onclick="toggleDiv('sem')">Programming for Problem Solving using C</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" download onclick="toggleDiv('sem')">Engineering Drawing</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" download onclick="toggleDiv('sem')">Applied Physis</a><br><br>
+	  </div>
+	  
+	  <div id="sub2" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the subject</h4>
+	    <a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">Mathematics-II</a><br><br>
+		<a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">Python</a><br><br>
+		<a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">Basic Electrical Engineering</a><br><br>
+		<a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">English</a><br><br>
+	  </div>
+	  
+	  <div id="sub3" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the subject</h4>
+	    <a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">Probability & Statistics</a><br><br>
+		<a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">Discrete Mathematics</a><br><br>
+		<a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">Computer Network</a><br><br>
+		<a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">Analog & Digital Electronics</a><br><br>
+		<a href="C:\Users\User\Downloads\m1.pdf" onclick="toggleDiv('sem')">DataStructures using C</a><br><br>
+	  </div>
+	  
+	  <div id="sub4" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the subject</h4>
+	    <a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Internet of  Things</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">DataBase Management System</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Computer organization& Operating System</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Object Oriented Programming through JAVA</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Software Engineering</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Manerial Economics and Finacial Analysis</a><br><br>
+	  </div>
+	  
+	  <div id="sub5" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the subject</h4>
+	    <a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Embedded Systems</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Foundation of Data Science</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Mobile Application Development</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Desing and Analysis of Algorithm</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Principles of Electronic Communication</a><br><br>
+		<a href="C:\Users\User\Downloads\ed.pdf" onclick="toggleDiv('sem')">Automata & Compiler Design</a><br><br>
+	  </div>
+	  
+	  <div id="sub6" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the subject</h4>
+	    <a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Wireless Sensors Network& IOT Standards</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Data Mining</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Design Pattern</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Artifical Intelligence</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Web Technologies</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Principles of Computer Communication& Networking</a><br><br>
+	  </div>
+	  
+	  <div id="sub7" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the subject</h4>
+	    <a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Cloud Computing</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem'">Machine Learning</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Mobile Computing</a><br><br>
+	  </div>
+	  
+	  <div id="sub8" class="hidden">
+	  <h4 style="color:#c0c0c0;">Select the subject</h4>
+	    <a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">Web Services</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem'">Information Security Incident Response& Management</a><br><br>
+		<a href="C:\Users\User\Downloads\ap.pdf" onclick="toggleDiv('sem')">DataBase Security</a><br><br>
+	  </div>
+	  
+	 
+    </div>
+	
+	<script>
+		function toggleDiv(btech){
+			var btech=document.getElementById(btech);
+			if(btech.classList.contains('hidden')){
+				btech.classList.remove('hidden');
+				btech.classList.add('visible');
+			}
+			else{
+				btech.classList.remove('visible');
+				btech.classList.add('hidden');
+			
+			}
+			
+			
+		}
+		
+		
+		function toggleDiv(reg){
+			var reg=document.getElementById(reg);
+			if(reg.classList.contains('hidden')){
+				reg.classList.remove('hidden');
+				reg.classList.add('visible');
+			}
+			else{
+				reg.classList.remove('visible');
+				reg.classList.add('hidden');
+			
+			}
+			
+			
+		}
+		
+		function toggleDiv(bnc){
+			var bnc=document.getElementById(bnc);
+			if(bnc.classList.contains('hidden')){
+				bnc.classList.remove('hidden');
+				bnc.classList.add('visible');
+			}
+			else{
+				bnc.classList.remove('visible');
+				bnc.classList.add('hidden');
+			
+			}
+			
+			
+		}
+	</script>
+</body>
+</html>
+
